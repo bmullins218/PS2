@@ -1,138 +1,129 @@
 package base;
 
 public class MyInteger {
-	package base;
-
-
-
-	public class MyInteger {
 
 	private int Value;
 
+	public MyInteger(int iValue) {
 
-	public MyInteger(int iValue){
-
-	Value = iValue;
-
-	}
-
-
-	public int GetNumber(){
-
-	return Value;
+		Value = iValue;
 
 	}
 
+	public int GetNumber() {
 
-	public boolean isEven(){
-
-	if(Value%2==0)
-
-	return true;
-
-	else
-
-	return false;
+		return Value;
 
 	}
 
-	public boolean isOdd(){
+	public boolean isEven() {
 
-	if(Value%2!=0)
+		if (Value % 2 == 0)
 
-	return true;
+			return true;
 
-	else
+		else
 
-	return false;
-
-	}
-
-	public boolean isPrime(){
-
-	int num = 0;
-
-	for(num=2;num<=Value/2;num++){
-
-	if(Value%num!= 0)
-
-	return true;
+			return false;
 
 	}
 
-	return false;
+	public boolean isOdd() {
+
+		if (Value % 2 != 0)
+
+			return true;
+
+		else
+
+			return false;
 
 	}
 
-	public static boolean isEven(int Value){
+	public boolean isPrime() {
 
-	if(Value%2==0)
+		int num = 0;
 
-	return true;
+		for (num = 2; num <= Value / 2; num++) {
 
-	else
+			if (Value % num != 0)
 
-	return false;
+				return true;
 
-	}
+		}
 
-	public static boolean isOdd(int Value){
-
-	if(Value%2!=0)
-
-	return true;
-
-	else
-
-	return false;
+		return false;
 
 	}
 
-	public static boolean isPrime(int Value){
+	public static boolean isEven(int Value) {
 
-	int num =0;
+		if (Value % 2 == 0)
 
-	for(num=2;num<=Value/2;num++){
+			return true;
 
-	if(Value%num!=0)
+		else
 
-	return true;
-
-	}
-
-	return false;
+			return false;
 
 	}
 
-	public static boolean isEven(MyInteger iValue){
+	public static boolean isOdd(int Value) {
 
-	return MyInteger.isEven(iValue.GetNumber());
+		if (Value % 2 != 0)
 
-	}
+			return true;
 
-	public static boolean isOdd(MyInteger iValue){
+		else
 
-	return MyInteger.isOdd(iValue.GetNumber());
-
-	}
-
-	public static boolean isPrime(MyInteger iValue){
-
-	return MyInteger.isPrime(iValue.GetNumber());
+			return false;
 
 	}
 
-	public boolean equals(int iValue){
+	public static boolean isPrime(int Value) {
 
-	return GetNumber()==iValue;
+		int num = 0;
+
+		for (num = 2; num <= Value / 2; num++) {
+
+			if (Value % num != 0)
+
+				return true;
+
+		}
+
+		return false;
 
 	}
 
-	public boolean equal(MyInteger iValue){
+	public static boolean isEven(MyInteger iValue) {
 
-	return equals(iValue.GetNumber());
+		return MyInteger.isEven(iValue.GetNumber());
+
+	}
+
+	public static boolean isOdd(MyInteger iValue) {
+
+		return MyInteger.isOdd(iValue.GetNumber());
 
 	}
 
+	public static boolean isPrime(MyInteger iValue) {
+
+		return MyInteger.isPrime(iValue.GetNumber());
+
 	}
+
+	public boolean equals(int iValue) {
+
+		return GetNumber() == iValue;
+
+	}
+
+	public boolean equal(MyInteger iValue) {
+
+		return equals(iValue.GetNumber());
+
+	}
+
 }
