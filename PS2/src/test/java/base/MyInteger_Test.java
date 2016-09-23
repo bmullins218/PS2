@@ -63,7 +63,7 @@ public class MyInteger_Test {
 		MyInteger b = new MyInteger(3);
 		MyInteger c = new MyInteger(4);
 		MyInteger d = new MyInteger(5);
-		assertTrue(MyInteger.isPrime(a));
+		assertTrue(a.isPrime());
 		assertTrue(MyInteger.isPrime(b));
 		assertFalse(MyInteger.isPrime(c));
 		assertTrue(MyInteger.isPrime(d));

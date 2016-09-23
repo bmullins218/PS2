@@ -44,15 +44,13 @@ public class MyInteger {
 
 		int num = 0;
 
-		for (num = 2; num <= Value / 2; num++) {
+		for (num = 2; num < Value; num++) {
+			if (Value % num == 0)
 
-			if (Value % num != 0)
-
-				return true;
+				return false;
 
 		}
-
-		return false;
+		return true;
 
 	}
 
@@ -84,15 +82,15 @@ public class MyInteger {
 
 		int num = 0;
 
-		for (num = 2; num <= Value / 2; num++) {
+		for (num = 2; num < Value; num++) {
 
-			if (Value % num != 0)
+			if (Value % num == 0)
 
-				return true;
+				return false;
 
 		}
 
-		return false;
+		return true;
 
 	}
 
@@ -109,7 +107,6 @@ public class MyInteger {
 	}
 
 	public static boolean isPrime(MyInteger iValue) {
-
 		return MyInteger.isPrime(iValue.GetNumber());
 
 	}
@@ -120,7 +117,7 @@ public class MyInteger {
 
 	}
 
-	public boolean equal(MyInteger iValue) {
+	public boolean equals(MyInteger iValue) {
 
 		return equals(iValue.GetNumber());
 
